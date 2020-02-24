@@ -1,7 +1,6 @@
 ## Portfolio for Kent M. Schaeffer
 
-
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://ne0crank.github.io/kentmschaeffer/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://ne0crank.github.io/kentmschaeffer)
 
 Welcome to the first public portfolio for Kent M. Schaeffer, Engineer and budding Web Developer.
 
@@ -12,49 +11,42 @@ Welcome to the first public portfolio for Kent M. Schaeffer, Engineer and buddin
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
+- [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Security
 
-### Any optional sections
-
 ## Background
-
-### Any optional sections
 
 ## Install
 
-This module depends upon a knowledge of [Markdown]().
+This project uses [html](), [css](), [node](http://nodejs.org), and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
+```sh
+$ npm install --global standard-readme-spec
 ```
-```
-
-### Any optional sections
 
 ## Usage
 
-```
-```
-
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
-
-### Any optional sections
+Please use at your own risk, this is my first project!
 
 ## API
 
-### Any optional sections
+No API ... yet
 
-## More optional sections
+### Maintainers
+
+[@ne0crank](https://github.com/ne0crank).
 
 ## Contributing
 
 See [the contributing file](CONTRIBUTING.md)!
 
-Small note: If editing the Readme, please conform to the [standard-readme](https://ne0crank.github.com/kentmschaeffer/standard-readme) specification.
+Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ### Any optional sections
 
 ## License
 
-[MIT © Kent M. Schaeffer](LICENSE)
+[MIT](LICENSE) © Kent M. Schaeffer
