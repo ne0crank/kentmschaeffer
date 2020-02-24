@@ -1,14 +1,60 @@
-## Your GitHub Learning Lab Repository for Intro to HTML
+## Portfolio for Kent M. Schaeffer
 
-Welcome to your repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through.
 
-Oh! I haven't introduced myself...
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://ne0crank.github.io/kentmschaeffer/standard-readme)
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+Welcome to the first public portfolio for Kent M. Schaeffer, Engineer and budding Web Developer.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+## Table of Contents
 
-I'll meet you over there, can't wait to get started!
+- [Security](#security)
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
 
-This repository is licensed under [MIT](LICENSE) (c) 2019 GitHub, Inc.
-Photo by [Kelli Tungay](https://unsplash.com/photos/Sj0nhVIb4eY) on [Unsplash](https://unsplash.com/)
+## Security
+
+### Any optional sections
+
+## Background
+
+### Any optional sections
+
+## Install
+
+This module depends upon a knowledge of [Markdown]().
+
+```
+```
+
+### Any optional sections
+
+## Usage
+
+```
+```
+
+Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
+
+### Any optional sections
+
+## API
+
+### Any optional sections
+
+## More optional sections
+
+## Contributing
+
+See [the contributing file](CONTRIBUTING.md)!
+
+Small note: If editing the Readme, please conform to the [standard-readme](https://ne0crank.github.com/kentmschaeffer/standard-readme) specification.
+
+### Any optional sections
+
+## License
+
+[MIT © Kent M. Schaeffer](../LICENSE)
