@@ -57,4 +57,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[MIT © Kent M. Schaeffer](../LICENSE)
+[MIT © Kent M. Schaeffer](LICENSE)
