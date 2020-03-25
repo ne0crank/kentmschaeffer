@@ -1,315 +1,120 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display:900|Open+Sans');
-@font-face {
-    font-family: 'icomoon';
-    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2');
-    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2') format('embedded-opentype'),
-        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2') format('woff'),
-        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2') format('truetype'),
-        url('fhttps://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.svg?3qkin2#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-.social-networks {
-  margin: 35px 0 35px;
+/* reset all styles */
+
+* {
+  margin: 0;
   padding: 0;
-  font-size: 0;
-  text-align: center;
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    display: block;
-    position: relative;
-    margin: 0 7px;
-    width: 68px;
-    height: 68px;
-    font-size: 0;
-    line-height: 0;
-    text-align: center;
-    text-decoration: none;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      margin-top: -50%;
-      margin-left: -50%;
-      border-radius: 100px;
-      background-color: #1f2027;
-      transition: all 400ms;
-    }
-
-    &:after {
-      position: relative;
-      display: block;
-      font-family: 'icomoon';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      color: #fff;
-      font-size: 26px;
-      line-height: 66px;
-    }
-
-    &:hover, &:focus {
-      text-decoration: none;
-    }
-  }
-  
-  &.spin-icon a:hover:after, &.spin-icon a:focus:after {
-    transition: transform 0.4s ease-out;
-    transform: rotateZ(360deg);
-  }
-  
-  &.square a:hover:before, &.square a:focus:before {
-    border-radius: 0;
-  }
-  
-  &.bounce a:hover, &.bounce a:focus {
-    animation: bounce 1s;
-  }
-  
-  $networks: linkedin '\eac9' #0077b5, facebook '\e603' #3b5998, twitter '\e618' #00b0ed, github '\eab1' #4183c4, instagram '\e604' #3f729b, vimeo '\ea9c' #1ab7ea, twitch '\ea9b' #6441a5, pinterest '\e605' #cc2127;
-  
-  @each $network in $networks {
-     .icon-#{nth($network, 1)} {
-       &:after {
-         content: '#{nth($network, 2)}';
-      }
-
-      &:hover:before, &:focus:before {
-        background: nth($network, 3);
-      }
-    }
-  }
+  border: 0;
 }
 
-@keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
-  }
+/* headnav inline-grid items */
 
-  40% {
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -6px, 0);
-  }
-
-  70% {
-    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -4px, 0);
-  }
-
-  90% {
-    transform: translate3d(0,-2px,0);
-  }
+.navhome {
+  grid-column: 1;
 }
 
-body {
-    background: #e9e9e9;
-    background-size: cover;
-//    padding: 100px;
-    font-family: 'Open Sans', sans-serif;
-    color: #000000;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 300px auto;
-    background-repeat: no-repeat;
+.navcareer {
+  grid-column: 3;
 }
 
-header {
-  background-color: #466995;
-  border-bottom: 1px solid #466995;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
+.navpersonal {
+  grid-column: 4;
 }
 
-ul {
-  margin: auto;
-  padding: 20px 0;
+.navcontact {
+  grid-column: 5;
 }
 
-ul.navbar {
-  list-style-type: none;
-  text-align: right;
-  color: #FFFFFF;
+/* mainbody grid items */
+
+.mainlogo {
+  grid-area: sidebar;
 }
 
-li {
-  color: #FFFFFF;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+.maincareer {
+  grid-area: career;
+}
+
+.mainpersonal {
+  grid-area: personal;
+}
+
+.maincontact {
+  grid-area: footer;
+}
+
+/* header navigation styles */
+
+.headnav {
   display: inline-block;
-  padding: 0 20px;
-}
-
-.kentm {
-  box-sizing: border-box;
-  padding: 40px;
-  text-align: left;
   width: 100%;
+  font-family: Arial;
+  background: #ccc;
+  border-bottom: 2px solid #bbb;
+}
+
+.headnav ul > li {
+  display: inline-block;
   position: relative;
-  top: 50px;
 }
 
-.home {
-  text-align: left;   
+.headnav ul > li:hover {
+  background: #666;
+  color: #ccc;
+  text-shadow: 1px 1px 0 #555;
 }
 
-.home:hover {
-  opacity: 0.7;
+.headnav ul > li:hover > a {
+  color: #ccc;
+  text-shadow: 1px 1px 0 #555;
 }
 
-h1, h2 { 
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    color: rgb(104, 85, 57);
-    font-family: 'Playfair Display', sans-serif;
-
-    background-image: linear-gradient(120deg, rgb(30,77,53) 0%, rgb(245, 233, 149) 50%, rgb(28, 33, 104) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
-    transition: background-size 0.25s ease-in;        
-}
-h1 {
-    font-size: 48pt;
-}  
-h2 {
-    font-size: 16;
+.headnav ul > li:hover > ul {
+  display: block;
+  padding: 5px 0;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
-img.mylogo {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 50px;
+.headnav ul > li:hover > ul li {
+  list-style: none;
+  display: block;
+  white-space: nowrap;
+  color: #ccc;
+  text-shadow: 1px 1px 0 #555;
 }
 
-ul.like, ul.did, ul.learn, ul.earn {
-    list-style-type: none;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    width: 200px;
-    font-size: 14pt;
-} 
-
-ul.like::before {
-    content: 'Things I Like';
-    font-family: 'Permanent Marker', cursive;
-    color: rgb(28, 33, 104);
-    background-color: rgba(245, 233, 149, 0.5);
-    font-size: 18pt;
-}
-ul.did::before {
-    content: 'Things I Did';
-    font-family: 'Permanent Marker', cursive;
-    color: rgb(28, 33, 104);
-    background-color: rgba(245, 233, 149, 0.5);
-    font-size: 18pt;
-}
-ul.learn::before {
-    content: 'Things I Learned';
-    font-family: 'Permanent Marker', cursive;
-    color: rgb(28, 33, 104);
-    background-color: rgba(245, 233, 149, 0.5);
-    font-size: 18pt;
-}
-ul.earn::before {
-    content: 'Things I Earned';
-    font-family: 'Permanent Marker', cursive;
-    color: rgb(28, 33, 104);
-    background-color: rgba(245, 233, 149, 0.5);
-    font-size: 18pt;
+.headnav ul > li:hover > ul a {
+  color: #ccc;
+  text-shadow: 1px 1px 0 #555;
 }
 
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
+.headnav ul > li:hover > ul a:hover {
+  color: #666;
+  background: #ccc;
+  text-shadow: 1px 1px 0 #eee;
+}
+
+.headnav ul > li > a {
+  display: block;
+  padding: 0 10px;
+  line-height: 40px;
   text-decoration: none;
+  color: #666;
+  text-shadow: 1px 1px 0 #ddd;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+.headnav ul > li > a:hover {
+  background: #666;
+  color: #ccc;
+  text-shadow: 1px 1px 0 #555;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+.headnav ul > li > ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #666;
+  z-index: 2;
 }
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-section a {
-    color: rgb(28, 33, 104);
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    vertical-align: bottom;
-}
-section a::after {
-    background: linear-gradient(to bottom, rgb(245, 233, 149), rgb(245, 233, 149)) center 1.08em/100% 2px no-repeat;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 400%;
-    will-change: transform;
-    z-index: -1;
-}
-section a:hover::after {
-    -webkit-animation: underline-gradient 6s linear infinite;
-            animation: underline-gradient 6s linear infinite;
-    background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
-}
-  
-@-webkit-keyframes underline-gradient {
-    0% {
-      -webkit-transform: translate3d(0%, 0%, 0);
-              transform: translate3d(0%, 0%, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(-75%, 0%, 0);
-              transform: translate3d(-75%, 0%, 0);
-    }
-}
-  
-@keyframes underline-gradient {
-    0% {
-      -webkit-transform: translate3d(0%, 0%, 0);
-              transform: translate3d(0%, 0%, 0);
-    }
-    100% {
-      -webkit-transform: translate3d(-75%, 0%, 0);
-              transform: translate3d(-75%, 0%, 0);
-    }
-}
-  
