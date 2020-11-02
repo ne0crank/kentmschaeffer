@@ -11,20 +11,30 @@ html {
   background-color: #333;
 }
 
-body, section {
+#myCarousel,
+section #bio,
+section #skills {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  background-color: #777;
+  background-size: cover;
+  position: relative;
   padding-bottom: 3rem;
   color: #5a5a5a;
   overflow: hidden;
   overflow-y: scroll;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  background-color: #777;
-  position: relative;
 }
 
-section #bio, section #skills {
-  display: -ms-flexbox;
-  display: flex;
+.navbar {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 2px 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Links */
@@ -33,38 +43,27 @@ a:focus,
 a:hover {
   color: #fff;
 }
-
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #335b7b;
+  border: .05rem solid #335b7b;
 }
 
 
-/* CUSTOMIZE THE CAROUSEL #home
+/* CUSTOMIZE THE CAROUSEL main
 -------------------------------------------------- */
 
-#home, #bio {
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  overflow: hidden;
-  overflow-y: scroll;
-  position: relative;
-}
-
 @media (max-height: 500px) {
-  #home {
+  main {
     height: 150vh;
   }
 }
 
-
-#home .carousel, #home .carousel-inner, #home .carousel-item, #home .carousel-item::before {
+main .carousel, main .carousel-inner, main .carousel-item, main .carousel-item::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -72,18 +71,18 @@ a:hover {
   bottom: 0;
 }
 
-#home .carousel-item {
+main .carousel-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#home .carousel-item::before {
+main .carousel-item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#home .carousel-item > img {
+main .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
@@ -91,11 +90,11 @@ a:hover {
   height: 32rem;
 }
 
-#home .carousel-caption {
+main .carousel-caption {
   padding-bottom: 9rem;
 }
 
-#home h2 {
+main h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 30px;
@@ -103,12 +102,12 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  #home h2 {
+  main h2 {
     font-size: 28px;
   }
 }
 
-#home p {
+main p {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
@@ -116,7 +115,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  #home p {
+  main p {
     width: 60%;
   }
 }
@@ -128,13 +127,7 @@ a:hover {
 
 #bio {
   background-size: cover;
-  background-color: #dec675;
-}
-
-#bio a,
-#bio a:focus,
-#bio a:hover {
-  color: #335b7b;
+  background-color: #777;
 }
 
 /* Cover */
@@ -161,6 +154,7 @@ a:hover {
   height: 29rem;
 }
 
+#bio h1,
 #bio p {
   padding-bottom: 3rem;
 }
@@ -169,33 +163,72 @@ a:hover {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.skills .col-lg-4 {
+
+#skills {
+  background-size: cover;
+  background-color: #fff;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+#skills h1 {
+  font-weight: 200;
+  padding: 3rem;
+}
+
+#skills .col-lg-4 {
+  margin-top: 1.25rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.skills h2 {
-  font-weight: 400;
+
+#skills .col-lg-4 i {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 48px;
+  display: inline-block;
+  line-height: 1;
 }
-.skills .col-lg-4 p {
+
+#skills .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-
 /* PROJECTS CONTENT
 ------------------------- */
 
-.projects-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+
+#projects {
+  background-color: #333;
+  position: relative;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-/* Thin out the marketing headings */
-.projects-heading {
-  font-weight: 300;
+#projects .projects-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  background-color: #335b7b;
+}
+
+#projects .img-block {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+/* Thin out the  headings */
+#projects .projects-heading {
+  font-weight: 200;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 
+#projects h2 span {
+  color: #335b7b;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
