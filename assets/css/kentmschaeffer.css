@@ -230,6 +230,20 @@ main p {
   color: #335b7b;
 }
 
+/* FOOTER CONTENT
+------------------------- */
+
+
+#contact {
+  background-color: #333;
+  position: relative;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  color: #fff;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
