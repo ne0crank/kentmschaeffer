@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -16,352 +17,422 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-      }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
 
     <!-- Custom CSS -->
     <link href="assets/css/kentmschaeffer.css" rel="stylesheet">
-  </head>
-  <body>
-  <!-- <body data-spy="scroll" data-target="#navbarCollapse"> -->
+</head>
 
+<body>
+    <!-- <body data-spy="scroll" data-target="#navbarCollapse"> -->
+
+    <!-- begin navbar header -->
     <header>
-      <nav class="navbar navbar-expand-md fixed-top d-flex bd-highlight">
-        <a class="navbar-brand p-2 flex-grow-1 bd-highlight" href="#">Kent M. Schaeffer</a></h3>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md fixed-top d-flex bd-highlight">
+            <a class="navbar-brand p-2 flex-grow-1 bd-highlight" href="#">Kent M. Schaeffer</a></h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <!-- <ul class="nav nav-tabs navbar-nav mr-auto" role="tablist"> -->
-            <li class="nav-item active p-2 bd-highlight">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link" href="#bio">Bio</a>
-            </li>
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link" href="#projects" aria-disabled="true">Projects</a>
-            </li>
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link disabled" href="#edu" aria-disabled="true">Education</a>
-            </li>
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link" href="#contact" tabindex="-1">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <ul class="nav nav-tabs navbar-nav mr-auto" role="tablist"> -->
+                    <li class="nav-item active p-2 bd-highlight">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link" href="#bio">Bio</a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link" href="#jobs">Employment</a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link" href="#projects" aria-disabled="true">Projects</a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link disabled" href="#edu" aria-disabled="true">Education</a>
+                    </li>
+                    <li class="nav-item p-2 bd-highlight">
+                        <a class="nav-link" href="#contact" tabindex="-1">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
+    <!-- end navbar header -->
 
+    <!-- begin carousel landing section -->
     <main role="main">
-      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-          <li data-target="#myCarousel" data-slide-to="5"></li>
-          <li data-target="#myCarousel" data-slide-to="6"></li>
-        </ol>
-        <div class="carousel-inner vh-100">
-          <div class="carousel-item active h-100" style="background-image: url(assets/img/carousel/elcap-red.jpg); background-size:cover; background-color: #777">
-            <div class="carousel-caption">
-              <h2>Web Developer</h2>
-              <p>
-                Experienced Developer and Quality Engineer with solid skills in JavaScript (including Node.js, Bootstrap and a little React), HTML, CSS, Perl, and Java. Test GUI and code-based changes with manual and automated use cases.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-              </p>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+            <!-- #0 web developer -->
+            <div class="carousel-inner vh-100">
+                <div class="carousel-item active h-100" style="background-image: url(assets/img/carousel/elcap-red.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Web Developer</h2>
+                        <p>
+                            Avid Developer and Quality Engineer with solid skills in JavaScript (including Node.js, Bootstrap and a little React), HTML, CSS, Perl, Python and Java. Test GUI and code-based changes with manual and automated use cases.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #1 ddi engineer -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/cloudy-mtn.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>DDI Engineer</h2>
+                        <p>
+                            Full love for and ability in building, automating, maintaining, upgrading, and supporting DDI (DNS, DHCP, IP Address Mgt) infrastructure for multiple organizations. Worked with Infoblox, VitalQIP, Verisign and other IPAM systems. Built and enhanced CLI
+                            automation for DDI operations workflow and statistial reporting under VitalQIP and Infoblox applications and appliances/servers.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #2 scrum master -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/wild-pass.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Scrum Master</h2>
+                        <p>
+                            Practiced and certified in Agile methodoligies to support development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives using servant leadership within the Scrum meetings and Sprint timelines.
+                            Document standards, objectives, processes, technologies using Enterprise standard tools (Jira, Confluence, MS Word, PDF, SharePoint).
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #3 jigsaw puzzler -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/goonie_beach.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Jigsaw Puzzler</h2>
+                        <p>
+                            Formidable Jigsaw Puzzler with a lifetime of experience in strategies for attacking puzzles ranging from small (500+ piece) to insanity (1000+ piece). With the help of one or two family members, am able to complete 1000 piece puzzles in less than a week,
+                            while still keeping my job. Once completed a 2000 piece puzzle in under a month.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #4 technology manager -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/waterfall.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Technology Manager</h2>
+                        <p>
+                            Natural leader and coach with technical staff on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership. Inspire staff using servant leadership, coaching and mentoring
+                            sessions, and trust exercises. Strong believer in inclusion, positive affirmation, and individual worth for navigating the struggles in life-balance and difficult work experiences.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #5 information security engineer -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/alaska-mtn.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Information Security Engineer</h2>
+                        <p>
+                            Support information security efforts through Secure Peer Code Review, Vulnerability Management for hardware and software, Configuration and Drift Automation, and Deployment/Maintenance Change Reporting.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #6 technical team lead -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/bryce-waterfall.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Technical Team Lead</h2>
+                        <p>
+                            Natural leader and mentor with technical peers on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- #7 Technical Documentation Specialist -->
+                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/mount_south_nephi.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption">
+                        <h2>Technical Documentation Specialist</h2>
+                        <p>
+                            Mean skills in the design and implentation of technical documentation for engineering specifications and standards, instruction/procedural documents, technical diagrams, developer API and other interface/coding documentation, and much more. Documentation
+                            tools include: Visio, Omnigraffle, MS Office, Adobe Acrobat/PDF, Jira, Confluence, HTML, and other web formats.
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/cloudy-mtn.jpg); background-size:cover; background-color: #777">
-            <div class="carousel-caption">
-              <h2>DDI Engineer</h2>
-              <p>
-                Over a decade of experience building, automating, maintaining, upgrading, and supporting DDI (DNS, DHCP, IP Address Mgt) infrastructure for multiple organizations. Worked with Infoblox, VitalQIP, Verisign and other IPAM systems. Built and enhanced CLI automation for DDI operations workflow and statistial reporting under VitalQIP and Infoblox applications and appliances/servers.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/wild-pass.jpg); background-size:cover; background-color: #777">
-            <div class="carousel-caption">
-              <h2>Scrum Master</h2>
-              <p>
-                Practiced and certified in Agile methodoligies to support development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives using servant leadership within the Scrum meetings and Sprint timelines. Document standards, objectives, processes, technologies using Enterprise standard tools (Jira, Confluence, MS Word, PDF, SharePoint).
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-              </p>
-          </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-            <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/goonie_beach.jpg); background-size:cover; background-color: #777">
-              <div class="carousel-caption">
-                <h2>Jigsaw Puzzler</h2>
-                <p>
-                  Formidable Jigsaw Puzzler with a lifetime of experience in strategies for attacking puzzles ranging from small (500+ piece) to insanity (1000+ piece). With the help of one or two family members, am able to complete 1000 piece puzzles in less than a week, while still keeping my job. Once completed a 2000 piece puzzle in under a month.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/waterfall.jpg); background-size:cover; background-color: #777">
-              <div class="carousel-caption">
-                <h2>Technology Manager</h2>
-                <p>
-                  Natural leader and coach with technical staff on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership. Inspire staff using servant leadership, coaching and mentoring sessions, and trust exercises. Strong believer in inclusion, positive affirmation, and individual worth for navigating the struggles in life-balance and difficult work experiences.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/alaska-mtn.jpg); background-size:cover; background-color: #777">
-              <div class="carousel-caption">
-                <h2>Information Security Engineer</h2>
-                <p>
-                  Support information security efforts through Secure Peer Code Review, Vulnerability Management for hardware and software, Configuration and Drift Automation, and Deployment/Maintenance Change Reporting.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/bryce-waterfall.jpg); background-size:cover; background-color: #777">
-              <div class="carousel-caption">
-                <h2>Technical Team Lead</h2>
-                <p>
-                  Natural leader and mentor with technical peers on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#bio" role="button">Read bio</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </main>
+    </main>
+    <!-- end carousel landing section -->
 
-      <section id="bio" class="text-center">
+    <!-- begin bio section -->
+    <section id="bio" class="text-center">
         <div class="cover vh-100" style="background-image: url(assets/img/duck-haze.png); background-size:cover">
-          <div class="inner cover-item h-100">
-            <h1 class="cover-heading">bio</h1>
-            <p class="lead text-justify">
-              I am a Developer and Engineer with over a decade of experience working for financial institutions, such as <a href="https://wellsfargo.com/" target="_blank">Wells Fargo Bank</a> and <a href="https://schwab.com" target="_blank">Charles Schwab</a>. I have built, enhanced and maintained applications. I have raised and documented standards, policies and processes. I am trained and practiced in servant leadership.
-            </p>
-            <p class="lead text-justify">
-              I can often be found spending time with family...<a href="https://utahsoccer.org/" target="_blank">playing</a> or <a href="https://www.rsl.com/" target="_blank">watching</a> soccer, <a href="https://www.ravensburger.us/products/jigsaw-puzzles/adult-puzzles/index.html" target="_blank">jigsaw</a> <a href="https://www.clementoni.com/en/puzzles/" target="_blank">puzzling</a>, binging <a href="https://netflix.com/" target="_blank">Netflix</a> or <a href="https://disneyplus.com/" target="_blank">DisneyPlus</a>, hiking trails throughout the western United States, or just chilling in the backyard.
-            </p>
-            <p class="lead text-justify">
-              I strongly believe in giving back to the community by donating my time and efforts to those in need. I provide technical advice to the <a href="http://itesol.org/" target="_blank">I-TESOL</a> group in keeping up their website and hosting technical conferences. I have taught basic <a href="https://englishskillslearningcenter.com/" target="_blank">English language skills</a> to refugees trained and employed at the <a href="https://www.churchofjesuschrist.org/topics/humanitarian-service/center?lang=eng" target="_blank">LDS Humanitarian Center</a>.
-            </p>
-            <p>
-              <a class="btn btn-lg btn-secondary" href="#skills" role="button">Read skills</a>
-            </p>
-          </div>
+            <div class="inner cover-item h-100">
+                <h1 class="cover-heading">bio</h1>
+                <p class="lead text-justify">
+                    I am a Developer, Engineer, Leader and Technical Writer with over a decade of experience working for financial institutions, such as <a href="https://wellsfargo.com/" target="_blank">Wells Fargo Bank</a> and <a href="https://schwab.com"
+                        target="_blank">Charles Schwab</a>. I have built, enhanced and maintained applications. I have raised and documented standards, policies and processes. I am trained and practiced in servant leadership.
+                </p>
+                <p class="lead text-justify">
+                    I can often be found spending time with family...<a href="https://utahsoccer.org/" target="_blank">playing</a> or <a href="https://www.rsl.com/" target="_blank">watching</a> soccer, <a href="https://www.ravensburger.us/products/jigsaw-puzzles/adult-puzzles/index.html"
+                        target="_blank">jigsaw</a> <a href="https://www.clementoni.com/en/puzzles/" target="_blank">puzzling</a>, binging <a href="https://netflix.com/" target="_blank">Netflix</a> or <a href="https://disneyplus.com/" target="_blank">DisneyPlus</a>,
+                    hiking trails throughout the western United States, or just chilling in the backyard.
+                </p>
+                <p class="lead text-justify">
+                    I strongly believe in giving back to the community by donating my time and efforts to those in need. I provide technical advice to the <a href="http://itesol.org/" target="_blank">I-TESOL</a> group in keeping up their website and hosting
+                    technical conferences. I have taught basic <a href="https://englishskillslearningcenter.com/" target="_blank">English language skills</a> to refugees trained and employed at the <a href="https://www.churchofjesuschrist.org/topics/humanitarian-service/center?lang=eng"
+                        target="_blank">LDS Humanitarian Center</a>.
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-secondary" href="#skills" role="button">Read skills</a>
+                </p>
+            </div>
         </div>
-      </section>
+    </section>
+    <!-- end bio section -->
 
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <section id="skills" class="text-center">
+    <!-- begin skills section -->
+    <section id="skills" class="text-center">
         <div class="container">
-          <h1 class="cover-heading">skills</h1>
-          <!-- Three columns of text below -->
-          <div class="row">
-            <div class="col-lg-4">
-              <h4>Development</h4>
-              <i class="ion-social-nodejs"></i>
-              <p>Experienced Developer and Quality Engineer with solid skills in JavaScript, HTML, CSS, Perl, and Java. Test GUI and code-based changes with manual and automated use cases.</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <h4>Agile</h4>
-              <i class="ion-ios-chatboxes-outline"></i>
-              <p>Practiced and certified in Agile philosophy for development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives.</p>
-              <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <h4>Leadership</h4>
-              <i class="ion-ios-people-outline"></i>
-              <p>Personable and purposeful leader of engineers and developers. Build relationships that lead others toward career enjoyment and advancement.</p>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
+            <h1 class="cover-heading">skills</h1>
+            <!-- Three columns of text below -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>Development</h4>
+                    <i class="ion-social-nodejs"></i>
+                    <p>Experienced Developer and Quality Engineer with solid skills in JavaScript, HTML, CSS, Perl, and Java. Test GUI and code-based changes with manual and automated use cases.</p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h4>Agile</h4>
+                    <i class="ion-ios-chatboxes-outline"></i>
+                    <p>Practiced and certified in Agile philosophy for development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives.</p>
+                    <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <h4>Leadership</h4>
+                    <i class="ion-ios-people-outline"></i>
+                    <p>Personable and purposeful leader of engineers and developers. Build relationships that lead others toward career enjoyment and advancement.</p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
             <p>
-              <a class="btn btn-lg btn-secondary" href="#projects" role="button">Read Projects</a>
+                <a class="btn btn-lg btn-secondary" href="#projects" role="button">Read Projects</a>
             </p>
-        </div><!-- /.container -->
-      </section>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- end skills section -->
 
-      <section id="projects" class="container-fluid text-white">
+    <!-- begin jobs section -->
+    <section id="jobs" class="container-fluid">
+    </section>
+    <!-- end jobs section -->
+
+    <!-- begin projects section -->
+    <section id="projects" class="container-fluid text-white">
 
         <!-- START THE PROJECTS -->
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="projects-heading">Cyber Analytics Project <span>Wells Fargo Bank</span></h2>
-            <h5 class="text-muted">Mar 2020 - Present</h5>
-            <p class="lead">Building and upgrading big data software platform for Cyber Analytics Project (CAP) that uses Cloudera Data Platform (CDP) and Trifacta Wrangler software. Developed security access and support models for application stacks.</p>
-          </div>
-          <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/clouds.jpg)">
-          </div>
+            <div class="col-md-7">
+                <h2 class="projects-heading">Cyber Analytics Project <span>Wells Fargo Bank</span></h2>
+                <h5 class="text-muted">Mar 2020 - Present</h5>
+                <p class="lead">Building and upgrading big data software platform for Cyber Analytics Project (CAP) that uses Cloudera Data Platform (CDP) and Trifacta Wrangler software. Developed security access and support models for application stacks.</p>
+            </div>
+            <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/clouds.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7 order-md-2 ml-auto">
-            <h2 class="projects-heading">Cyber Security Innovations Team <span>Wells Fargo Bank</span></h2>
-            <h5 class="text-muted"> Mar 2018 - Present</h5>
-            <p class="lead">Engineer new solutions and develop standards for application performance and stability; debug application issues and consult Developers when needed; and support internal security data manipulation web apps for Cyber Security Innovation (CSI) group. Launched role of Scrum Master for fellow Engineers using Agile, Jira and Remedy. Developed new frontend and backend code enhancements for applications built on Linux, Apache, Meteor, NodeJS, GitHub/GitLab, MongoDB, and Redis. Set technology standards and baselines for server/application monitoring and alerting, application release deployment and validation, and documenting related infrastructure.</p>
-          </div>
-          <div class="img-block col-md-4" style="background-image: url(assets/img/projects/forest.jpg)">
-          </div>
+            <div class="col-md-7 order-md-2 ml-auto">
+                <h2 class="projects-heading">Cyber Security Innovations Team <span>Wells Fargo Bank</span></h2>
+                <h5 class="text-muted"> Mar 2018 - Present</h5>
+                <p class="lead">Engineer new solutions and develop standards for application performance and stability; debug application issues and consult Developers when needed; and support internal security data manipulation web apps for Cyber Security Innovation
+                    (CSI) group. Launched role of Scrum Master for fellow Engineers using Agile, Jira and Remedy. Developed new frontend and backend code enhancements for applications built on Linux, Apache, Meteor, NodeJS, GitHub/GitLab, MongoDB, and
+                    Redis. Set technology standards and baselines for server/application monitoring and alerting, application release deployment and validation, and documenting related infrastructure.</p>
+            </div>
+            <div class="img-block col-md-4" style="background-image: url(assets/img/projects/forest.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="projects-heading">DDI Operations Technical Team Lead <span>Wells Fargo Bank</span></h2>
-            <h5 class="text-muted">Jul 2015 - Mar 2018</h5>
-            <p class="lead">Promoted as Technical Team Lead for DDI-Operations team to enhance and manage backend automation; recover and maintain request website; and mentor Analysts in providing first-level support for the Enterprise DDI (DNS, DHCP, IPAM) issues and perform scheduled changes.  Improved accuracy and consistency by 30% by creating automation to streamline, add security measures (which decreased efficiency by 50%), and reduce errors for Analysts to submit 1,000 to 10,000 nightly DDI object changes. Learned XML, Perl, MySQL, jQuery, JSON and XHTML to enhance and recover from death the internal DDI Request System; create new automation and process for building nightly team statistical reports; and create ad hoc tools to automate and support Enterprise projects. Earned Wells Fargo Golden Coin award for establishing and leading weekly team sessions to mentor team in technology, process, customer service, and other topics.</p>
-          </div>
-          <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/ripple.jpg)">
-          </div>
+            <div class="col-md-7">
+                <h2 class="projects-heading">DDI Operations Technical Team Lead <span>Wells Fargo Bank</span></h2>
+                <h5 class="text-muted">Jul 2015 - Mar 2018</h5>
+                <p class="lead">Promoted as Technical Team Lead for DDI-Operations team to enhance and manage backend automation; recover and maintain request website; and mentor Analysts in providing first-level support for the Enterprise DDI (DNS, DHCP, IPAM) issues
+                    and perform scheduled changes. Improved accuracy and consistency by 30% by creating automation to streamline, add security measures (which decreased efficiency by 50%), and reduce errors for Analysts to submit 1,000 to 10,000 nightly
+                    DDI object changes. Learned XML, Perl, MySQL, jQuery, JSON and XHTML to enhance and recover from death the internal DDI Request System; create new automation and process for building nightly team statistical reports; and create ad
+                    hoc tools to automate and support Enterprise projects. Earned Wells Fargo Golden Coin award for establishing and leading weekly team sessions to mentor team in technology, process, customer service, and other topics.</p>
+            </div>
+            <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/ripple.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7 order-md-2 ml-auto">
-            <h2 class="projects-heading">DDI Integrations <span>Wells Fargo Bank</span></h2>
-            <h5 class="text-muted">Aug 2008 - Jul 2015</h5>
-            <p class="lead">Brought onboard to provide additional engineering and support for DDI infrastructure, applications, and tools. Enhanced team cohesion, technological understanding, and security configurations. Created executive and engineer visibility into the DDI Infrastructure and team by designing visual data/network diagrams and publishing technical documentation. Increased productivity by creating automation for DDI data validation and formatting used prior to processing using Korn Shell Scripts. </p>
-          </div>
-          <div class="img-block col-md-4" style="background-image: url(assets/img/projects/darks.jpg)">
-          </div>
+            <div class="col-md-7 order-md-2 ml-auto">
+                <h2 class="projects-heading">DDI Integrations <span>Wells Fargo Bank</span></h2>
+                <h5 class="text-muted">Aug 2008 - Jul 2015</h5>
+                <p class="lead">Brought onboard to provide additional engineering and support for DDI infrastructure, applications, and tools. Enhanced team cohesion, technological understanding, and security configurations. Created executive and engineer visibility
+                    into the DDI Infrastructure and team by designing visual data/network diagrams and publishing technical documentation. Increased productivity by creating automation for DDI data validation and formatting used prior to processing using
+                    Korn Shell Scripts. </p>
+            </div>
+            <div class="img-block col-md-4" style="background-image: url(assets/img/projects/darks.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="projects-heading">Data Center Operations <span>Charles Schwab</span></h2>
-            <h5 class="text-muted">Jun 2007 - Jun 2008</h5>
-            <p class="lead">Provided first-level support for and resolved technology/security issues on Schwab.com applications and systems. Mentored less experienced Analysts on technology support, and methods to identify and more quickly resolve issues on Schwab.com applications and systems.</p>
-          </div>
-          <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/pasture.jpg)">
-          </div>
+            <div class="col-md-7">
+                <h2 class="projects-heading">Data Center Operations <span>Charles Schwab</span></h2>
+                <h5 class="text-muted">Jun 2007 - Jun 2008</h5>
+                <p class="lead">Provided first-level support for and resolved technology/security issues on Schwab.com applications and systems. Mentored less experienced Analysts on technology support, and methods to identify and more quickly resolve issues on Schwab.com
+                    applications and systems.</p>
+            </div>
+            <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/pasture.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7 order-md-2 ml-auto">
-            <h2 class="projects-heading">Application Development Analyst <span>Catholic Healthcare West</span></h2>
-            <h5 class="text-muted">2005 - 2007</h5>
-            <p class="lead">Deployed Java code to production using shell scripting and ANT automation. Maintained production IBM WebSphere Application/Portal Server system installations.</p>
-          </div>
-          <div class="img-block col-md-4" style="background-image: url(assets/img/projects/mountain.jpg)">
-          </div>
+            <div class="col-md-7 order-md-2 ml-auto">
+                <h2 class="projects-heading">Application Development Analyst <span>Catholic Healthcare West</span></h2>
+                <h5 class="text-muted">2005 - 2007</h5>
+                <p class="lead">Deployed Java code to production using shell scripting and ANT automation. Maintained production IBM WebSphere Application/Portal Server system installations.</p>
+            </div>
+            <div class="img-block col-md-4" style="background-image: url(assets/img/projects/mountain.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="projects-heading">Information Technology Manager <span>Starwood Hotels & Resorts Worldwide</span></h2>
-            <h5 class="text-muted">2003 - 2004</h5>
-            <p class="lead">Managed technology needs for staff and guests at the St Regis and Century Plaza Hotels & Convention Centers. Supervised contractors and coordinated with vendors on infrastructure repairs and upgrades. Increased staff productivity by 50% by organizing, planning and implementing desktop hardware and software upgrades. Obtained funding to pay for necessary infrastructure upgrades by calculating and presenting budget figures at multiple board meetings. Skyrocketed sales and ability to meet technical needs for hotel and meeting convention attendees by pre-ordering technology materials to have on-hand.</p>
-          </div>
-          <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/sunset.jpg)">
-          </div>
+            <div class="col-md-7">
+                <h2 class="projects-heading">Information Technology Manager <span>Starwood Hotels & Resorts Worldwide</span></h2>
+                <h5 class="text-muted">2003 - 2004</h5>
+                <p class="lead">Managed technology needs for staff and guests at the St Regis and Century Plaza Hotels & Convention Centers. Supervised contractors and coordinated with vendors on infrastructure repairs and upgrades. Increased staff productivity by 50%
+                    by organizing, planning and implementing desktop hardware and software upgrades. Obtained funding to pay for necessary infrastructure upgrades by calculating and presenting budget figures at multiple board meetings. Skyrocketed sales
+                    and ability to meet technical needs for hotel and meeting convention attendees by pre-ordering technology materials to have on-hand.</p>
+            </div>
+            <div class="img-block col-md-4 ml-auto" style="background-image: url(assets/img/projects/sunset.jpg)">
+            </div>
         </div>
 
         <hr class="projects-divider">
 
         <!-- /END THE PROJECTS -->
 
-      </section><!-- /.container -->
+    </section>
+    <!-- end projects section -->
 
+    <!-- begin edu section -->
+    <section id="edu" class="container-fluid">
+    </section>
+    <!-- end edu section -->
 
-      <!-- FOOTER -->
-      <footer id="contact" class="text-center">
+    <!-- begin footer/contact section -->
+    <footer id="contact" class="text-center">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-sm-6">
-              <h4>Follow Me</h4>
-              <a href="https://www.linkedin.com/in/kentmschaeffer">
-                <ion-icon name="logo-linkedin" size="large"></ion-icon>
-              </a>
-              <span class="align-top">&middot;</span>
-              <a href="https://ne0crank.github.io/kentmschaeffer">
-                <ion-icon name="logo-github" size="large"></ion-icon>
-              </a>
-              <span class="align-top">&middot;</span>
-              <a href="https://twitter.com/kentmschaeffer">
-                <ion-icon name="logo-twitter" size="large"></ion-icon>
-              </a>
-              <span class="align-top">&middot;</span>
-              <a href="https://www.facebook.com/kentmschaeffer">
-                <ion-icon name="logo-facebook" size="large"></ion-icon>
-              </a>
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h4>Follow Me</h4>
+                    <a href="https://www.linkedin.com/in/kentmschaeffer">
+                        <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                    </a>
+                    <span class="align-top">&middot;</span>
+                    <a href="https://ne0crank.github.io/kentmschaeffer">
+                        <ion-icon name="logo-github" size="large"></ion-icon>
+                    </a>
+                    <span class="align-top">&middot;</span>
+                    <a href="https://twitter.com/kentmschaeffer">
+                        <ion-icon name="logo-twitter" size="large"></ion-icon>
+                    </a>
+                    <span class="align-top">&middot;</span>
+                    <a href="https://www.facebook.com/kentmschaeffer">
+                        <ion-icon name="logo-facebook" size="large"></ion-icon>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Contact Me</h4>
+                    <p>
+                        <span class="align-top">West Valley City, Utah</span>
+                        <span class="align-top">&middot;</span>
+                        <a href="mailto:kentmschaeffer@icloud.com">
+                            <ion-icon name="mail" size="large" shape="circle"></ion-icon>
+                        </a>
+                        <span class="align-top">&middot;</span>
+                        <a href="tel:+13854142779">
+                            <ion-icon name="call" size="large"></ion-icon>
+                        </a>
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-6">
-              <h4>Contact Me</h4>
-              <p>
-                <span class="align-top">West Valley City, Utah</span>
-                <span class="align-top">&middot;</span>
-                <a href="mailto:kentmschaeffer@icloud.com">
-                  <ion-icon name="mail" size="large" shape="circle"></ion-icon>
-                </a>
-                <span class="align-top">&middot;</span>
-                <a href="tel:+13854142779">
-                  <ion-icon name="call" size="large"></ion-icon>
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
         <p>
-          &copy; 2020 Kent M. Schaeffer
+            &copy; 2020 Kent M. Schaeffer
         </p>
-      </footer>
+    </footer>
+    <!-- end footer/contact section -->
+
+    <!-- begin script section -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/jquery/js/jquery.slim.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="assets/jquery/js/jquery.slim.min.js"><\/script>')
+    </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
