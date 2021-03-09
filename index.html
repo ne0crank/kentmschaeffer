@@ -11,6 +11,9 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- ionicons icon fonts -->
@@ -25,7 +28,7 @@
             -ms-user-select: none;
             user-select: none;
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -51,7 +54,7 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- <ul class="nav nav-tabs navbar-nav mr-auto" role="tablist"> -->
                     <li class="nav-item active p-2 bd-highlight">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
                         <a class="nav-link" href="#bio">Bio</a>
@@ -63,7 +66,7 @@
                         <a class="nav-link" href="#jobs">Employment</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link" href="#projects" aria-disabled="true">Projects</a>
+                        <a class="nav-link disabled" href="#projects" aria-disabled="true">Projects</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
                         <a class="nav-link disabled" href="#edu" aria-disabled="true">Education</a>
@@ -80,7 +83,7 @@
     <!-- begin carousel landing section -->
     <main role="main">
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -89,7 +92,7 @@
                 <li data-target="#myCarousel" data-slide-to="5"></li>
                 <li data-target="#myCarousel" data-slide-to="6"></li>
                 <li data-target="#myCarousel" data-slide-to="7"></li>
-            </ol>
+            </ol> -->
             <!-- #0 web developer -->
             <div class="carousel-inner vh-100">
                 <div class="carousel-item active h-100" style="background-image: url(assets/img/carousel/elcap-red.jpg); background-size:cover; background-color: #777">
@@ -207,75 +210,205 @@
 
     <!-- begin bio section -->
     <section id="bio" class="text-center">
-        <div class="cover vh-100" style="background-image: url(assets/img/duck-haze.png); background-size:cover">
-            <div class="inner cover-item h-100">
-                <h1 class="cover-heading">bio</h1>
-                <p class="lead text-justify">
-                    I am a Developer, Engineer, Leader and Technical Writer with over a decade of experience working for financial institutions, such as <a href="https://wellsfargo.com/" target="_blank">Wells Fargo Bank</a> and <a href="https://schwab.com"
-                        target="_blank">Charles Schwab</a>. I have built, enhanced and maintained applications. I have raised and documented standards, policies and processes. I am trained and practiced in servant leadership.
-                </p>
-                <p class="lead text-justify">
-                    I can often be found spending time with family...<a href="https://utahsoccer.org/" target="_blank">playing</a> or <a href="https://www.rsl.com/" target="_blank">watching</a> soccer, <a href="https://www.ravensburger.us/products/jigsaw-puzzles/adult-puzzles/index.html"
-                        target="_blank">jigsaw</a> <a href="https://www.clementoni.com/en/puzzles/" target="_blank">puzzling</a>, binging <a href="https://netflix.com/" target="_blank">Netflix</a> or <a href="https://disneyplus.com/" target="_blank">DisneyPlus</a>,
-                    hiking trails throughout the western United States, or just chilling in the backyard.
-                </p>
-                <p class="lead text-justify">
-                    I strongly believe in giving back to the community by donating my time and efforts to those in need. I provide technical advice to the <a href="http://itesol.org/" target="_blank">I-TESOL</a> group in keeping up their website and hosting
-                    technical conferences. I have taught basic <a href="https://englishskillslearningcenter.com/" target="_blank">English language skills</a> to refugees trained and employed at the <a href="https://www.churchofjesuschrist.org/topics/humanitarian-service/center?lang=eng"
-                        target="_blank">LDS Humanitarian Center</a>.
-                </p>
-                <p>
-                    <a class="btn btn-lg btn-secondary" href="#skills" role="button">Read skills</a>
-                </p>
-            </div>
+      <div class="cover vh-100" style="background-image: url(assets/img/duck-haze.png); background-size:cover">
+        <div class="inner cover-item h-100">
+          <h1 class="cover-heading">bio</h1>
+            <p class="lead text-justify">
+              I am a Developer, Engineer, Leader and Technical Writer with over a decade of experience working for financial institutions, such as <a href="https://wellsfargo.com/" target="_blank">Wells Fargo Bank</a> and <a href="https://schwab.com" target="_blank">Charles Schwab</a>. I have built, enhanced and maintained applications. I have raised and documented standards, policies and processes. I am trained and practiced in servant leadership.
+            </p>
+            <p class="lead text-justify">
+              I can often be found spending time with family...<a href="https://utahsoccer.org/" target="_blank">playing</a> or <a href="https://www.rsl.com/" target="_blank">watching</a> soccer, <a href="https://www.ravensburger.us/products/jigsaw-puzzles/adult-puzzles/index.html" target="_blank">jigsaw</a> <a href="https://www.clementoni.com/en/puzzles/" target="_blank">puzzling</a>, binging <a href="https://netflix.com/" target="_blank">Netflix</a> or <a href="https://disneyplus.com/" target="_blank">DisneyPlus</a>, hiking trails throughout the western United States, or just chilling in the backyard.
+            </p>
+            <p class="lead text-justify">
+              I strongly believe in giving back to the community by donating my time and efforts to those in need. I provide technical advice to the <a href="http://itesol.org/" target="_blank">I-TESOL</a> group in keeping up their website and hosting technical conferences. I have taught basic <a href="https://englishskillslearningcenter.com/" target="_blank">English language skills</a> to refugees trained and employed at the <a href="https://www.churchofjesuschrist.org/topics/humanitarian-service/center?lang=eng" target="_blank">LDS Humanitarian Center</a>.
+            </p>
+          <p>
+            <a class="btn btn-lg btn-secondary" href="#skills" role="button">Read skills</a>
+          </p>
         </div>
+      </div>
     </section>
     <!-- end bio section -->
 
     <!-- begin skills section -->
     <section id="skills" class="text-center">
-        <div class="container">
-            <h1 class="cover-heading">skills</h1>
-            <!-- Three columns of text below -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h4>Development</h4>
-                    <i class="ion-social-nodejs"></i>
-                    <p>Experienced Developer and Quality Engineer with solid skills in JavaScript, HTML, CSS, Perl, and Java. Test GUI and code-based changes with manual and automated use cases.</p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <h4>Agile</h4>
-                    <i class="ion-ios-chatboxes-outline"></i>
-                    <p>Practiced and certified in Agile philosophy for development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives.</p>
-                    <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <h4>Leadership</h4>
-                    <i class="ion-ios-people-outline"></i>
-                    <p>Personable and purposeful leader of engineers and developers. Build relationships that lead others toward career enjoyment and advancement.</p>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
+      <div class="container">
+        <h1 class="cover-heading">skills</h1>
+        <!-- Three columns of text below -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h4>Development</h4>
+            <i class="ion-social-nodejs"></i>
             <p>
-                <a class="btn btn-lg btn-secondary" href="#projects" role="button">Read Projects</a>
+              Experienced Developer and Quality Engineer with solid skills in JavaScript, HTML, CSS, Perl, and Java. Test GUI and code-based changes with manual and automated use cases.
             </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h4>Agile</h4>
+            <i class="ion-ios-chatboxes-outline"></i>
+            <p>
+              Practiced and certified in Agile philosophy for development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h4>Leadership</h4>
+            <i class="ion-ios-people-outline"></i>
+            <p>
+              Personable and purposeful leader of engineers and developers. Build relationships that lead others toward career enjoyment and advancement.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
         </div>
-        <!-- /.container -->
+        <!-- /.row -->
+        <p>
+          <a class="btn btn-lg btn-secondary" href="#projects" role="button">Read Projects</a>
+        </p>
+      </div>
+      <!-- /.container -->
     </section>
     <!-- end skills section -->
 
     <!-- begin jobs section -->
     <section id="jobs" class="container-fluid">
+      <!-- start jobs section header -->
+      <div id="jobs-container" class="my-3 p-3">
+        <div class="d-flex bg-white align-items-center p-3 text-50 rounded shadow-sm">
+          <h6 class="mb-0 lh-100">Employment History</h6>
+        </div>
+      </div>
+      <!-- end jobs section header -->
+      <div id="jobs-container" class="my-3 p-3">
+        <!-- start employer: wells fargo bank -->
+        <div id="jobs-employer" class="d-flex bg-white align-items-center p-3 text-50 rounded shadow-sm">
+          <img class="mr-3" src="assets/brand/wells_logo.png" alt="Wells Fargo Logo" width="48" height="48">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <h6 class="mb-0 lh-100">Wells Fargo Bank</h6>
+            <small>August 2008 to December 2020</small><small class="text-right">Onsite in Chandler, Arizona and Telecommuted from West Valley City, Utah</small>
+          </div>
+        </div>
+        <!-- end employer: wells fargo bank -->
+        <!-- start position: information security engineer -->
+        <div id="jobs-position" class="d-block bg-white align-items-center p-3 my-3 lh-100 rounded shadow-sm">
+          <h6 class="mb-0">Information Security Engineer</h6>
+          <small>March 2018 to December 2020</small>
+          <div class="media text-muted pt-3">
+            <p class="media-body mb-0 small">
+              <strong class="d-block text-gray-dark">Configured, supported, deployed and developed full stack code enhancements for multiple Cyber Security Innovation Team applications and tools.</strong>
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Launched role of Scrum Master for team Engineers as part of the enterprise Agile Transformation program.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Installed and configured Big Data applications and data pipelines built on the Cloudera Data Platform and Trifacta Wrangler application stacks.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Developed frontend and backend enhancements to internal Node.js application, using DDI knowledge from previous team. Also developed Node.js script tool to analyze and report MongoDB user access data.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Provided leadership and technical advisor role for group infrastructure needs (F5 BigIP, DNS, Grafana/Telegraf, monitoring/alerting) and technical documentation needs (MS Word, Confluence, CMS structuring, Visio/Omnigraffle Pro, PDF).
+            </p>
+          </div>
+        </div>
+        <!-- end position: information security engineer -->
+        <!-- start position: technical team lead -->
+        <div id="jobs-position" class="d-block bg-white align-items-center p-3 my-3 lh-100 rounded shadow-sm">
+          <h6 class="mb-0">Technical Team Lead</h6>
+          <small>July 2015 to March 2018</small>
+          <div class="media text-muted pt-3">
+            <p class="media-body mb-0 small">
+              <strong class="d-block text-gray-dark">Promoted as Technical Team Lead for DDI-Operations team. Automated DDI data operations workflow.</strong>
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Streamlined Perl code to add 30% accuracy and efficiency to import and validation process, to enhance security measures (which decreased efficiency by 50%), and to reduce errors for Analysts submitting an average of 1,000 to 10,000 nightly DDI object changes.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Created Perl tool to build nightly DDI HTML change statistical reports and to support Enterprise projects.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Enhanced, supported and maintained internal DDI Request System, based on Perl CGI, Apache, XHTML, XML and CSV code and applications.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Planned and began migration of team-managed Subversion code and configuration repositories to enterprise GitHub repository platform.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Earned Wells Fargo Golden Coin award for establishing and leading weekly team sessions to mentor team on various topics.
+            </p>
+          </div>
+        </div>
+        <!-- end position: technical team lead -->
+        <!-- start position: network engineer -->
+        <div id="jobs-position" class="d-block bg-white align-items-center p-3 my-3 lh-100 rounded shadow-sm">
+          <h6 class="mb-0">Network Engineer</h6>
+          <small>August 2008 to July 2015</small>
+          <div class="media text-muted pt-3">
+            <p class="media-body mb-0 small">
+              <strong class="d-block text-gray-dark">Provided engineering and support for enterprise DDI infrastructure, applications, and tools.</strong>
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Increased productivity by creating and enhancing automation using Korn Shell Scripts on Linux servers for DDI import processing and validation on VitalQIP and Infoblox IPAM solutions.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Took lead in consolidating documentation during Wells Fargo and Wachovia merger, and participated in migrating workflow and implementation systems and procedures for Analysts.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Red Rectangle"><title>Red Bullet</title><rect width="100%" height="100%" fill="#cd1409"/></svg>
+            <p class="media-body mb-0 small">
+              Developed frontend and backend enhancements to internal Node.js application, using DDI knowledge from previous team. Also developed Node.js script tool to analyze and report MongoDB user access data.
+            </p>
+          </div>
+          <div class="media text-muted pt-3">
+            <svg class="bd-placeholder-img mr-2 rounded" width="16" height="16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Wells Fargo Gold Rectangle"><title>Gold Bullet</title><rect width="100%" height="100%" fill="#fcc60a"/></svg>
+            <p class="media-body mb-0 small">
+              Created first complete set of documentation and network diagrams using Visio, PDF, MS Word and SharePoint platforms.
+            </p>
+          </div>
+        </div>
+        <!-- end position: network engineer -->
+      </div>
+      <!--  end wells fargo job container div -->
     </section>
     <!-- end jobs section -->
 
     <!-- begin projects section -->
     <section id="projects" class="container-fluid text-white">
 
-        <!-- START THE PROJECTS -->
+        <!-- START THE PROJECTS
         <hr class="projects-divider">
 
         <div class="row">
@@ -372,7 +505,7 @@
 
         <hr class="projects-divider">
 
-        <!-- /END THE PROJECTS -->
+        END THE PROJECTS -->
 
     </section>
     <!-- end projects section -->
@@ -431,7 +564,6 @@
     <script>
         window.jQuery || document.write('<script src="assets/jquery/js/jquery.slim.min.js"><\/script>')
     </script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

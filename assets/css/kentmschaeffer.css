@@ -54,7 +54,7 @@ a:hover {
 .btn,
 .btn:hover,
 .btn:focus {
-    color: #fff;
+    color: rgb(223, 219, 219);
     text-shadow: none;
     /* Prevent inheritance from `body` */
     background-color: #232fdf;
@@ -209,7 +209,27 @@ main p {
     margin-left: .75rem;
 }
 
+/* EMPLOYMENT-JOBS CONTENT
+------------------------- */
 
+#jobs {
+    position: relative;
+    padding: 5rem 1rem 5rem 3rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-top: 4px solid #fcc60a;
+    border-bottom: 4px solid #fcc60a;
+}
+
+#jobs-container {
+  background-color: hsla(47,98%,51%, 0.15);
+  border: 1px solid #fcc60a;
+}
+
+#jobs h6 {
+  padding: 1px #000;
+  margin: 1px #000;
+}
 /* PROJECTS CONTENT
 ------------------------- */
 
