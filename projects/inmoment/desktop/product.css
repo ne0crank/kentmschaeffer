@@ -1,0 +1,146 @@
+
+
+/* font-face */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(../../../assets/fnt/IBM-Plex-Sans/IBMPlexSans-Regular.ttf);
+}
+
+body {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  /* Orca */
+  color: #001D30;
+  background: #EDF0F1;
+}
+
+.rectangle {
+  position: absolute;
+  width: 500px;
+  height: 21px;
+  left: 122px;
+  top: 99px;
+}
+
+.grey-line {
+  position: absolute;
+  width: 466px;
+  height: 0px;
+  left: 122px;
+  top: 813px;
+
+  /* Barracuda */
+  border: 1px solid #CFD4D9;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 146.28%;
+}
+
+/* H5 */
+h5 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 146.28%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 146.28%;
+  /* or 41px */
+}
+
+/* Betta */
+.betta {
+  color: #8B3CE6;
+}
+
+.lgrey {
+  /* Light Grey */
+  background: #EDF0F1;
+}
+
+.costume {
+  position: absolute;
+  width: 730px;
+  height: 900px;
+  left: 710px;
+  top: 0px;
+}
+
+#fullWidth,
+#fullWidth:hover,
+#fullWidth:active {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  color: #001D30;
+}
+
+.btn-lg.round {
+  border-color: #8B3CE6;
+	border-radius: 24px;
+  background-color: #8B3CE6;
+}
+/* */
+
+.panel-body {
+  font-size: 17px;
+  line-height: 165%;
+}
+
+.panel-default>.panel-heading {
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default>.panel-heading a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.panel-default>.panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  color: #001D30;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform .25s linear;
+  -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+  content: "\25bc";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #001D30;
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+  content: "\25bc";
+  color: #001D30;
+}
+
+.overflow-hidden { overflow: hidden; }
