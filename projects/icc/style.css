@@ -1,0 +1,30 @@
+html {
+  background-color: #aa092f;
+  background-image: url("./sunset-barn.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.navbar {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 2px 0;
+    background: rgba(255,255,255, 1);
+}
+
+.navbar-nav {
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+@media (max-height: 500px) {
+    main {
+        height: 100vh;
+    }
+}
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
