@@ -1,19 +1,17 @@
 html {
-  height: 500px;
   font-family: 'Roboto', sans-serif;
   font-color: #fff;
 }
 
 .navbar {
     transition: all 0.5s;
-    z-index: 997;
-    padding: 1px 0;
+    padding: 0;
     background: rgba(255,255,255, 1);
     font-color: #fff;
 }
 
 .navbar-nav {
-  align-items: flex-end;
+  align-items: flex;
   margin-left: auto;
 }
 
@@ -24,15 +22,13 @@ a:hover {
 }
 
 #games {
-  height: 470px;
-  padding-left: 50px;
-}
-
-.jumbotron-image {
-  background: url("./sunset-barn.jpg");
+  padding-top: 30px;
+  background: url("./sunset-barn.jpg") ;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
+  background-color: red;
 }
 
 #games h1 {
@@ -43,6 +39,14 @@ a:hover {
   font-size: 12px;
 }
 
+#games .container {
+  width: 40em;
+
+}
 .navbar-brand {
   font-size: 50px;
+}
+
+footer {
+  background-color: red;
 }
