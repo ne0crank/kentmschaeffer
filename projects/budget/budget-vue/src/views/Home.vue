@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Budget App" :key="componentKey"/>
   </div>
 </template>
 
@@ -14,5 +14,15 @@ export default {
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      componentKey: 0,
+    };
+  },
+  methods: {
+    forceRerender() {
+      this.componentKey += 1;
+    }
+  }
 };
 </script>
