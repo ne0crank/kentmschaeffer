@@ -3,18 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The attempts at a decent web page to display my skills, experiences, projects and contact information">
     <meta name="author" content="Kent M. Schaeffer">
-    <meta name="generator" content="Jekyll v4.1.1">
     <title>Kent M. Schaeffer</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <!-- Bootstrap 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8ce7cfc4e3.js" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js" integrity="sha256-9CKDuBNIQo/dQgrK9nyK+XcD2MBjb0JgnPMANrQw6Cs=" crossorigin="anonymous"></script>
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 
     <style>
         .bd-placeholder-img {
@@ -43,7 +41,7 @@
     <!-- begin navbar header -->
     <header>
         <nav class="navbar navbar-expand-md fixed-top d-flex bd-highlight">
-            <a class="navbar-brand p-2 flex-grow-1 bd-highlight" href="#">Kent M. Schaeffer</a></h3>
+            <a class="navbar-brand p-2 flex-grow-1 bd-highlight" href="#">kent m. schaeffer</a></h3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,25 +49,25 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- <ul class="nav nav-tabs navbar-nav mr-auto" role="tablist"> -->
                     <li class="nav-item active p-2 bd-highlight">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link" href="#bio"><i class="fas fa-image"></i> Bio</a>
+                        <a class="nav-link" href="#bio">bio</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link" href="#skills"><i class="fas fa-paper-plane"></i> Skills</a>
+                        <a class="nav-link" href="#skills">skills</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link" href="#jobs"><i class="fas fa-building"></i> Career</a>
+                        <a class="nav-link" href="#jobs">career</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link disabled" href="#projects" aria-disabled="true"> <i class="fas fa-handshake"></i> Projects</a>
+                        <a class="nav-link disabled" href="#projects" aria-disabled="true">projects</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link disabled" href="#edu" aria-disabled="true"><i class="fas fa-graduation-cap"></i> Education</a>
+                        <a class="nav-link disabled" href="#edu" aria-disabled="true">education</a>
                     </li>
                     <li class="nav-item p-2 bd-highlight">
-                        <a class="nav-link" href="#contact" tabindex="-1"><i class="fas fa-map-marker"></i> Contact</a>
+                        <a class="nav-link" href="#contact" tabindex="-1">contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,128 +77,92 @@
 
     <!-- begin carousel landing section -->
     <main role="main">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
-                <li data-target="#myCarousel" data-slide-to="7"></li>
-            </ol> -->
-            <!-- #0 web developer -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- bottom slider buttons -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="web developer"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="ddi engineer"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="scrum master"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="jigsaw puzzler"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="team lead"></button>
+          </div>
+          <!-- #0 web developer -->
             <div class="carousel-inner vh-100">
-                <div class="carousel-item active h-100" style="background-image: url(assets/img/carousel/elcap-red.jpg); background-size:cover; background-color: #777">
+                <div class="carousel-item d-block active h-100" style="background-image: url(assets/img/carousel/elcap-red.jpg); background-size:cover; background-color: #777">
                     <div class="carousel-caption">
-                        <h2>Web Developer</h2>
+                        <h2>web developer</h2>
                         <p>
-                            Avid Developer and Quality Engineer with solid skills in JavaScript (including Node.js, Bootstrap and a little React), HTML, CSS, Perl, Python and Java. Test GUI and code-based changes with manual and automated use cases.
+                            solid skills in JavaScript (node.js, bootstrap, vue.js and a little react), html, css, perl, python and java<br /><br />
+                            test gui and code-based changes with manual and automated use cases
                         </p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
+                            <a class="btn btn-lg btn-primary" href="#bio" role="button">read bio</a>
                         </p>
                     </div>
                 </div>
                 <!-- #1 ddi engineer -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/cloudy-mtn.jpg); background-size:cover; background-color: #777">
+                <div class="carousel-item d-block h-100" style="background-image: url(assets/img/carousel/alaska-mtn.jpg); background-size:cover; background-color: #777">
                     <div class="carousel-caption">
-                        <h2>DDI Engineer</h2>
+                        <h2>ddi engineer</h2>
                         <p>
-                            Full love for and ability in building, automating, maintaining, upgrading, and supporting DDI (DNS, DHCP, IP Address Mgt) infrastructure for multiple organizations. Worked with Infoblox, VitalQIP, Verisign and other IPAM systems. Built and enhanced CLI
-                            automation for DDI operations workflow and statistial reporting under VitalQIP and Infoblox applications and appliances/servers.
+                            build, automate, and upgrade ddi (dns, dhcp, ip address mgt) infrastructure for multiple organizations<br /><br />
+                            experience with infoblox, qip, verisign, neustar, ns1 and other ipam systems<br /><br />
+                            built and enhanced cli automation for ddi operations workflow and statistial reporting
                         </p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
+                          <a class="btn btn-lg btn-primary" href="#bio" role="button">read bio</a>
                         </p>
                     </div>
                 </div>
                 <!-- #2 scrum master -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/wild-pass.jpg); background-size:cover; background-color: #777">
+                <div class="carousel-item d-block h-100" style="background-image: url(assets/img/carousel/wild-pass.jpg); background-size:cover; background-color: #777">
                     <div class="carousel-caption">
-                        <h2>Scrum Master</h2>
+                        <h2>scrum master</h2>
                         <p>
-                            Practiced and certified in Agile methodoligies to support development and engineering workflows. Mentor and coach others in organized progress toward achieving desired objectives using servant leadership within the Scrum meetings and Sprint timelines.
-                            Document standards, objectives, processes, technologies using Enterprise standard tools (Jira, Confluence, MS Word, PDF, SharePoint).
+                            practiced and certified in agile, scrum, kanban to lead development and engineering workflows<br /><br />
+                            mentor and coach others in organized progress toward achieving desired objectives using servant leadership within the framework
                         </p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
+                          <a class="btn btn-lg btn-primary" href="#bio" role="button">read bio</a>
                         </p>
                     </div>
                 </div>
                 <!-- #3 jigsaw puzzler -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/goonie_beach.jpg); background-size:cover; background-color: #777">
+                <div class="carousel-item d-block h-100" style="background-image: url(assets/img/carousel/goonie_beach.jpg); background-size:cover; background-color: #777">
                     <div class="carousel-caption">
-                        <h2>Jigsaw Puzzler</h2>
+                        <h2>jigsaw puzzler</h2>
                         <p>
-                            Formidable Jigsaw Puzzler with a lifetime of experience in strategies for attacking puzzles ranging from small (500+ piece) to insanity (1000+ piece). With the help of one or two family members, am able to complete 1000 piece puzzles in less than a week,
-                            while still keeping my job. Once completed a 2000 piece puzzle in under a month.
+                            a lifetime of experience in strategies for attacking puzzles ranging from small (500+ piece) to insanity (1000+ piece)<br /><br />
+                            with the help of one or two family members, am able to complete 1000 piece puzzles in less than a week,
+                            while still keeping my job<br /><br />
+                            once completed a 2000 piece panoramic puzzle in under a month
                         </p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
+                          <a class="btn btn-lg btn-primary" href="#bio" role="button">read bio</a>
                         </p>
                     </div>
                 </div>
-                <!-- #4 technology manager -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/waterfall.jpg); background-size:cover; background-color: #777">
-                    <div class="carousel-caption">
-                        <h2>Technology Manager</h2>
+                <!-- #4 team lead -->
+                <div class="carousel-item d-block h-100" style="background-image: url(assets/img/carousel/bryce-waterfall.jpg); background-size:cover; background-color: #777">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>team lead</h2>
                         <p>
-                            Natural leader and coach with technical staff on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership. Inspire staff using servant leadership, coaching and mentoring
-                            sessions, and trust exercises. Strong believer in inclusion, positive affirmation, and individual worth for navigating the struggles in life-balance and difficult work experiences.
+                            passionate for mentoring, guiding and leading self and others toward achieving and exceeding objective goals set by team and leadership
                         </p>
                         <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- #5 information security engineer -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/alaska-mtn.jpg); background-size:cover; background-color: #777">
-                    <div class="carousel-caption">
-                        <h2>Information Security Engineer</h2>
-                        <p>
-                            Support information security efforts through Secure Peer Code Review, Vulnerability Management for hardware and software, Configuration and Drift Automation, and Deployment/Maintenance Change Reporting.
-                        </p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- #6 technical team lead -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/bryce-waterfall.jpg); background-size:cover; background-color: #777">
-                    <div class="carousel-caption">
-                        <h2>Technical Team Lead</h2>
-                        <p>
-                            Natural leader and mentor with technical peers on development and engineering teams. Passionate in leading self and others toward achieving and exceeding objective goals set by team and leadership.
-                        </p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- #7 Technical Documentation Specialist -->
-                <div class="carousel-item h-100" style="background-image: url(assets/img/carousel/mount_south_nephi.jpg); background-size:cover; background-color: #777">
-                    <div class="carousel-caption">
-                        <h2>Technical Documentation Specialist</h2>
-                        <p>
-                            Mean skills in the design and implentation of technical documentation for engineering specifications and standards, instruction/procedural documents, technical diagrams, developer API and other interface/coding documentation, and much more. Documentation
-                            tools include: Visio, Omnigraffle, MS Office, Adobe Acrobat/PDF, Jira, Confluence, HTML, and other web formats.
-                        </p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#bio" role="button">Read <i class="fas fa-image"></i> Bio</a>
+                          <a class="btn btn-lg btn-primary" href="#bio" role="button">read bio</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a> -->
         </div>
     </main>
     <!-- end carousel landing section -->
@@ -548,44 +510,38 @@
     <!-- begin footer/contact section -->
     <footer id="contact" class="text-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <h4>Follow Me</h4>
-                    <a href="https://www.linkedin.com/in/kentmschaeffer">
-                        <ion-icon name="logo-linkedin" size="large"></ion-icon>
-                    </a>
-                    <span class="align-top">&middot;</span>
-                    <a href="https://ne0crank.github.io/kentmschaeffer">
-                        <ion-icon name="logo-github" size="large"></ion-icon>
-                    </a>
-                    <span class="align-top">&middot;</span>
-                    <a href="https://twitter.com/kentmschaeffer">
-                        <ion-icon name="logo-twitter" size="large"></ion-icon>
-                    </a>
-                    <span class="align-top">&middot;</span>
-                    <a href="https://www.facebook.com/kentmschaeffer">
-                        <ion-icon name="logo-facebook" size="large"></ion-icon>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <h4>Contact Me</h4>
-                    <p>
-                        <span class="align-top">West Valley City, Utah</span>
-                        <span class="align-top">&middot;</span>
-                        <a href="mailto:kentmschaeffer@icloud.com">
-                            <ion-icon name="mail" size="large" shape="circle"></ion-icon>
-                        </a>
-                        <span class="align-top">&middot;</span>
-                        <a href="tel:+13854142779">
-                            <ion-icon name="call" size="large"></ion-icon>
-                        </a>
-                    </p>
-                </div>
-            </div>
+          <div class="wrapper">
+            <a href="https://ne0crank.github.io/kentmschaeffer/" class="icon home">
+              <div class="tooltip">Home</div>
+              <span><i class="fas fa-home"></i></span>
+            </a>
+            <a href="https://www.facebook.com/kentmschaeffer" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://twitter.com/kentmschaeffer" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.linkedin.com/in/kentmschaeffer/" class="icon linkedin">
+              <div class="tooltip">LinkedIn</div>
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+            <a href="https://github.com/ne0crank" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="mailto:ne0crank@icloud.com?subject=Your Awesome Site" class="icon email">
+              <div class="tooltip">Email</div>
+              <span><i class="fas fa-at"></i></span>
+            </a>
+          </div>
         </div>
-        <p>
+        <div class="container">
+          <p>
             &copy; 2021 Kent M. Schaeffer
-        </p>
+          </p>
+        </div>
     </footer>
     <!-- end footer/contact section -->
 
