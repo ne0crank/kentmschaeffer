@@ -46,8 +46,15 @@ a,
 a:focus,
 a:hover {
     color: #fff;
+    text-decoration: none;
 }
 
+#jobs a,
+#jobs a:focus,
+#jobs a:hover {
+  color: #DFBD69;
+  text-decoration: none;
+}
 
 /* Custom default button */
 
