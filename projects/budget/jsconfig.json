@@ -1,6 +1,0 @@
-// {
-//   "include": [
-//     "./vuejs/src/**/*"
-//   ],
-//   "exclude": ["./vuejs/node_modules"]
-// }
