@@ -7,6 +7,9 @@
 		{
 			"name": "bootstrap-5.3.3-examples",
 			"path": "../../Downloads/bootstrap-5.3.3-examples"
+		},
+		{
+			"path": "../clitools"
 		}
 	],
 	"settings": {}
