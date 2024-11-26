@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"> 
-    </script> 
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <!-- XZ fonts-->
     <link rel="stylesheet" href="https://fonts.xz.style/serve/merriweather.min.css">
@@ -471,49 +471,49 @@
                   <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> Aug 2008 to Jul 2015</p>
                   <p class="mb-0">Provided engineering and support for enterprise DDI infrastructure, applications, and tools. Increased productivity by creating and enhancing automation using Korn Shell Scripts on Linux servers for DDI import processing and validation on VitalQIP and Infoblox IPAM solutions. Took lead in consolidating documentation during Wells Fargo and Wachovia merger and participated in migrating workflow and implementation systems and procedures for Analysts. Created first complete set of documentation and network diagrams using Visio, PDF, MS Word and SharePoint platforms. Learned Perl in addition to advanced shell scripting for better understanding of team applications and tools.</p>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
-        </div>
-    </section>
+  <div class="col-md-12 align-items-center justify-content-center text-center">
+    <p class=" mb-5">
+    </p>
+    <a class="btn btn-light btn-xl mt-3" href="#contact" rel="noopener" rel="noreferrer">contact</a>
+  </div>
+</div>
+</section>
     <!-- end jobs section -->
 
-      <!-- Contact-->
-      <section class="page-section" id="contact">
+    <!-- Contact-->
+    <section class="page-section" id="contact">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0 text-white">Let's Get In Touch!</h2>
+            <h2 class="mt-0 text-white">Let's Get In Touch</h2>
             <hr class="divider" />
             <p class="text-muted mb-5">
-              Ready to start your next project? Send a message and
-              you will see a response soon!
+              Ready to start your next project? I would love to hear from you about your next project and how I can help!
             </p>
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form id="contactForm" method="POST">
               <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Enter your name..."
                   data-sb-validations="required"
+                  required
                 />
                 <label for="name">Full name</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">
                   A name is required.
                 </div>
+
               </div>
               <!-- Email address input-->
               <div class="form-floating mb-3">
@@ -521,8 +521,10 @@
                   class="form-control"
                   id="email"
                   type="email"
+                  name="email"
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
+                  required
                 />
                 <label for="email">Email address</label>
                 <div class="invalid-feedback" data-sb-feedback="email:required">
@@ -532,29 +534,17 @@
                   Email is not valid.
                 </div>
               </div>
-              <!-- Phone number input-->
-              <div class="form-floating mb-3">
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="(123) 456-7890"
-                  data-sb-validations="required"
-                />
-                <label for="phone">Phone number</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
-                </div>
-              </div>
               <!-- Message input-->
               <div class="form-floating mb-3">
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   type="text"
                   placeholder="Enter your message here..."
                   style="height: 10rem"
                   data-sb-validations="required"
+                  required
                 ></textarea>
                 <label for="message">Message</label>
                 <div
@@ -564,40 +554,36 @@
                   A message is required.
                 </div>
               </div>
-              <!-- Submit success message-->
-              <!---->
-              <!-- This is what your users will see when the form-->
-              <!-- has successfully submitted-->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br />
-                  <a href="https://startbootstrap.com/solution/contact-forms" rel="noopener" rel="noreferrer"
-                    >https://startbootstrap.com/solution/contact-forms</a
-                  >
-                </div>
-              </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">
-                  Error sending message!
-                </div>
-              </div>
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn btn-primary btn-xl"
                   id="submitButton"
                   type="submit"
+                  name="submit"
+                  value="submit"
                 >
                   Submit
                 </button>
               </div>
             </form>
+            <script>
+              document.getElementById("contactForm").addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData.entries());
+                const response = await fetch('/send-email', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data),
+                });
+                if (response.ok) {
+                  alert("Email sent!");
+                } else {
+                  alert("Failed to send email.");
+                }
+              });
+            </script>
           </div>
         </div>
       </div>
