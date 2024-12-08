@@ -512,14 +512,14 @@
             <h2 class="mt-0 text-white">Let's Get In Touch</h2>
             <hr class="divider" />
             <p class="text-muted mb-5">
-              Ready to start your next project? I would love to hear from you about your next project and how I can help!
+              Ready to start your next project? I would love to hear from you about your next adventure and how I can help!
             </p>
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
-            <form id="contactForm" method="POST">
-              <!-- Name input-->
+              <form id="contactForm" target="_blank" action="https://formsubmit.co/kent@kentknowsme.com" method="POST">
+                <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
@@ -576,31 +576,21 @@
                 </div>
               </div>
               <!-- Submit Button-->
-              <div class="d-grid">
-                <button
-                  class="btn btn-primary btn-xl"
-                  id="submitButton"
-                  type="submit"
-                  name="submit"
-                  value="submit"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-            <script>
-              document.getElementById("contactForm").addEventListener("submit", async (event) => {
-                event.preventDefault();
-                const formData = new FormData(event.target);
-                const response = await fetch('/submit', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify(Object.fromEntries(formData.entries())),
-                });
-                if (response.ok) alert("Message sent!");
-                else alert("Failed to send message.");
-              });
-            </script>
+                <div class="col-md-12 align-items-center justify-content-center text-center">
+                  <p class="text-muted mb-5">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting me. You should hear back within a couple days">
+                    <input type="hidden" name="_next" value="https://kentknowsme.com#contact">
+                  </p>
+                    <button
+                      class="btn btn-primary btn-xl"
+                      id="submitButton"
+                      type="submit"
+                      name="submit"
+                    >
+                      Submit
+                  </button>
+                </div>
+              </form>
           </div>
         </div>
       </div>
@@ -610,7 +600,7 @@
     <footer id="contact" class="bg-dark text-center">
       <div class="container">
         <div class="wrapper mb-2">
-          <a href="https://ne0crank.github.io/kentmschaeffer/" class="icon home">
+          <a href="https://kentknowsme.com/" class="icon home">
             <span><i class="bi-house fs-1 text-primary"></i></span>
           </a>
                 <a href="https://www.linkedin.com/in/kentmschaeffer/" class="icon linkedin">
@@ -627,7 +617,6 @@
             <div class="container text-center text-muted">
               <p class="mt-0 mb-5">Copyright &copy; 2024 <a href="https://github.com/ne0crank" title="ne0crank GitHub Profile" rel="noopener" rel="noreferrer" >ne0crank</a></p>
               <p class="mt-0 mb-5">All images captured by self or from various artists on <a href="https://unsplash.com" title="unsplash images" rel="noopener" rel="noreferrer" >unsplash</a></p>
-              <hr class="divider" />
             </div>
             </div>
             </footer>
