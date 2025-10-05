@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Start of HTML code -->
+<html lang="en">
+    <!-- Start of header -->
+    <head>
+        <!-- Start of Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A simple hotel KPI calculator to help hoteliers and hospitality professionals quickly calculate key performance indicators (KPIs) such as RevPAR, ADR, and Occupancy Rate.">
+        <meta name="keywords" content="Bezla, Bezla.com, Hotel KPI Calculator, RevPAR Calculator, ADR Calculator, Occupancy Rate Calculator, Hospitality Metrics, Hotel Performance Indicators, Hotel Financial Analysis, Hospitality Industry Tools, Hotel Management Software, Hotel Revenue Management">
+        <meta name="author" content="Kent Schaefffer">
+        <!-- End of Meta tags -->
+
+        <!-- Start of Title and links -->
+        <title>Bezla.com LLC Hotel KPI Calculator Dashboard Demo</title>
+        <link rel="stylesheet" href="bezla.css">
+        <link rel="icon" type="image/png" href="https://img1.wsimg.com/isteam/ip/23c01d94-28d3-425c-b0cf-5bb9e0b17e5f/Bezla.com%20LLC%20hotel%20marketing%20company%20-eb98010.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95">
+        <!-- End of Title and links -->
+    </head>
+    <!-- End of header -->
+    <!-- Start of body -->
+    <body id="home">
+        <!-- Start of Main content -->
+        <main>
+            <!-- Start Intro section-->
+            <section class="hero">
+                <h1>Welcome to Bezla.com LLC Hotel KPI Calculator Dashboard Demo</h1>
+                <p>Your go-to tool for quick and accurate hotel performance metrics.</p>
+                <a href="#calculator" class="btn">Try the Calculator</a>
+            </section>
+            <!-- End Intro section-->
+
+            <!-- Start Calculator section-->
+            <section id="calculator" class="calculator-section">
+                <h2>Hotel KPI Calculator</h2>
+                <!-- Start input form -->
+                <form id="kpiForm">
+                    <label for="totalRooms">Total Rooms Available:</label>
+                    <input type="number" id="totalRooms" name="totalRooms" required>
+
+                    <label for="roomsSold">Rooms Sold:</label>
+                    <input type="number" id="roomsSold" name="roomsSold" required>
+
+                    <label for="totalRevenue">Total Room Revenue ($):</label>
+                    <input type="number" id="totalRevenue" name="totalRevenue" required>
+
+                    <button type="submit" class="btn">Calculate KPIs</button>
+                </form>
+                <!-- End input form -->
+
+                <!-- Start results display -->
+                <div id="results" class="results">
+                    <h3>Results:</h3>
+                    <p id="occupancyRate">Occupancy Rate: --%</p>
+                    <p id="adr">Average Daily Rate (ADR): $--</p>
+                    <p id="revpar">Revenue Per Available Room (RevPAR): $--</p>
+                </div>
+            </section>
+        </main>
+        <!-- End of Main content -->
+        <!-- Start of Footer -->
+        <footer>
+            <p>&copy; 2025 Kent Schaeffer. All rights reserved.</p>
+        </footer>
+        <script src="bezla.js"></script>
+    </body>
+    <!-- End of body -->
+</html>
+<!-- End of HTML code -->
